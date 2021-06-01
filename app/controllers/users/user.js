@@ -15,4 +15,9 @@ export default class UsersUserController extends Controller {
     //  console.log(exception);
     //})
   }
+
+  @action
+  async changeArchiveStatus() {
+    this.model.SetArchiveStatus();
+  }
 }
